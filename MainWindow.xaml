@@ -19,7 +19,7 @@
                 <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="10,22,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="183"/>
                 <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="23" Margin="10,60,0,0" TextWrapping="Wrap" Text="Firstname" VerticalAlignment="Top" Width="183"/>
                 <TextBox x:Name="textBox3" HorizontalAlignment="Left" Height="23" Margin="10,103,0,0" TextWrapping="Wrap" Text="Lastname" VerticalAlignment="Top" Width="183"/>
-                <Button x:Name="button1" Content="Register" HorizontalAlignment="Left" Margin="118,182,0,0" VerticalAlignment="Top" Width="75"/>
+                <Button x:Name="button1" Content="Register" HorizontalAlignment="Left" Margin="118,182,0,0" VerticalAlignment="Top" Width="75" Click="button1_Click"/>
                 <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="232,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="167" Width="261"/>
             </Grid>
         </TabItem>
