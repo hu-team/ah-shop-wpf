@@ -9,7 +9,7 @@
     <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="260" Margin="0,0,0,0" VerticalAlignment="Top" Width="550" Background="#FF00A0E2">
         <TabItem Header="Login">
             <Grid Background="#FF00A0E2">
-                <Button x:Name="button" Content="Login" HorizontalAlignment="Left" Margin="215,155,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.469,-0.733"/>
+                <Button x:Name="button" Content="Login" HorizontalAlignment="Left" Margin="215,155,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.469,-0.733" Click="button_Click"/>
                 <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="135,25,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="252"/>
                 <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="135,92,0,0" VerticalAlignment="Top" Width="252" Password="Password" Height="23"/>
             </Grid>

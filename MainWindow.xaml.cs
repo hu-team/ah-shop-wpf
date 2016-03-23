@@ -23,6 +23,9 @@ namespace ah_shop_wpf
     /// </summary>
     public partial class MainWindow : Window
     {
+        public string url = ConfigurationManager.AppSettings["WebserviceUrl"];
+        public WebClient wc = new WebClient();
+
         public MainWindow()
         {
             InitializeComponent();
@@ -30,8 +33,7 @@ namespace ah_shop_wpf
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            WebClient wc = new WebClient();
-            string url = ConfigurationManager.AppSettings["WebserviceUrl"];
+            
             string username = textBox1.Text;
             string firstname = textBox2.Text;
             string lastname = textBox3.Text;
@@ -54,6 +56,27 @@ namespace ah_shop_wpf
                 textBlock.Text = createuser.message;
             }
     
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            string username = textBox.Text;
+            string password = passwordBox.Password.ToString();
+            string urlpart = url + "users/" + username + "/" + password;
+
+            string getLogin = wc.DownloadString(urlpart);
+            JavaScriptSerializer ser = new JavaScriptSerializer();
+            LoginUser loginuser = ser.Deserialize<LoginUser>(getLogin);
+
+            if (loginuser.type == "userNotFound")
+            {
+                MessageBox.Show(" " + loginuser.message, "Error!", MessageBoxButton.OK, MessageBoxImage.Error);
+            } else
+            {
+                UserDashboard userdashboard = new UserDashboard();
+                userdashboard.Show();
+                this.Close();
+            }
         }
     }
 }

@@ -1,0 +1,20 @@
+﻿<Window x:Class="ah_shop_wpf.UserDashboard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ah_shop_wpf"
+        mc:Ignorable="d"
+        Title="AH-Shop" Height="300" Width="550" ResizeMode="NoResize" Cursor="Arrow" Background="#FF00A0E2"
+        >
+    <Grid>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="189" Margin="10,38,0,0" VerticalAlignment="Top" Width="212"/>
+        <Label x:Name="label" Content="Inventory" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="listBox2" HorizontalAlignment="Left" Height="189" Margin="307,38,0,0" VerticalAlignment="Top" Width="212"/>
+        <Label x:Name="label1" Content="Shop" HorizontalAlignment="Left" Margin="307,12,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2" Content="Balance:" HorizontalAlignment="Left" Margin="10,227,0,0" VerticalAlignment="Top" Width="212"/>
+        <Button x:Name="button" Content="Buy" HorizontalAlignment="Left" Margin="392,230,0,0" VerticalAlignment="Top" Width="46"/>
+        <Button x:Name="button1" Content="Refresh" HorizontalAlignment="Left" Margin="453,230,0,0" VerticalAlignment="Top" Width="66" RenderTransformOrigin="0.344,0.627"/>
+
+    </Grid>
+</Window>
