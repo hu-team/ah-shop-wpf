@@ -5,8 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ah_shop_wpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+        Title="AH-Shop" Height="300" Width="550" ResizeMode="NoResize" Cursor="Arrow" Background="#FF00A0E2">
+    <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="260" Margin="0,0,0,0" VerticalAlignment="Top" Width="550" Background="#FF00A0E2">
+        <TabItem Header="Login">
+            <Grid Background="#FF00A0E2">
+                <Button x:Name="button" Content="Login" HorizontalAlignment="Left" Margin="215,155,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.469,-0.733"/>
+                <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="135,25,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="252"/>
+                <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="135,92,0,0" VerticalAlignment="Top" Width="252" Password="Password" Height="23"/>
+            </Grid>
+        </TabItem>
+        <TabItem Header="Register">
+            <Grid Background="#FF00A0E2">
+                <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="10,22,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="183"/>
+                <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="23" Margin="10,60,0,0" TextWrapping="Wrap" Text="Firstname" VerticalAlignment="Top" Width="183"/>
+                <TextBox x:Name="textBox3" HorizontalAlignment="Left" Height="23" Margin="10,103,0,0" TextWrapping="Wrap" Text="Lastname" VerticalAlignment="Top" Width="183"/>
+                <Button x:Name="button1" Content="Register" HorizontalAlignment="Left" Margin="118,182,0,0" VerticalAlignment="Top" Width="75"/>
+                <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="232,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="167" Width="261"/>
+            </Grid>
+        </TabItem>
+    </TabControl>
+
 </Window>
