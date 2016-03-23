@@ -58,6 +58,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Inventory.cs" />
+    <Compile Include="Product.cs" />
+    <Compile Include="Purchased.cs" />
     <Compile Include="UserDashboard.xaml.cs">
       <DependentUpon>UserDashboard.xaml</DependentUpon>
     </Compile>

@@ -73,7 +73,7 @@ namespace ah_shop_wpf
                 MessageBox.Show(" " + loginuser.message, "Error!", MessageBoxButton.OK, MessageBoxImage.Error);
             } else
             {
-                UserDashboard userdashboard = new UserDashboard();
+                UserDashboard userdashboard = new UserDashboard(loginuser);
                 userdashboard.Show();
                 this.Close();
             }

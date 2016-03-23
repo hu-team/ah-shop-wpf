@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ah_shop_wpf
 {
-    class User
+    public class User
     {
         public int id;
         public string username;
@@ -15,7 +15,7 @@ namespace ah_shop_wpf
 
     }
 
-    class UserInfo
+    public class UserInfo
     {
         public int id;
         public string firstname;
@@ -23,13 +23,13 @@ namespace ah_shop_wpf
         public double balance;
     }
 
-    class CreateUser
+    public class CreateUser
     {
         public string type;
         public string message;
     }
 
-    class LoginUser : CreateUser
+    public class LoginUser : CreateUser
     {
         public List<User> data;
     }
