@@ -85,6 +85,11 @@ namespace ah_shop_wpf
         private void button_Click(object sender, RoutedEventArgs e)
         {
             Product selectedProduct = (Product) listBox2.SelectedItem;
+            if (selectedProduct == null)
+            {
+                return; // Prevent NullPointer.
+            }
+
             int productid = selectedProduct.id;
             int userid = user.data[0].id;
 
